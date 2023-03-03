@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="chat-service" />
+        <module name="chat-entrance" />
+        <module name="chat-common" />
+        <module name="chat-dao" />
+        <module name="chat-web02" />
+        <module name="chat-web01" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chat-common" target="1.8" />
+      <module name="chat-dao" target="1.8" />
+      <module name="chat-entrance" target="1.8" />
+      <module name="chat-server" target="1.8" />
+      <module name="chat-service" target="1.8" />
+      <module name="chat-web01" target="1.8" />
+      <module name="chat-web02" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="chat-common" options="-parameters" />
+      <module name="chat-dao" options="-parameters" />
+      <module name="chat-entrance" options="-parameters" />
+      <module name="chat-service" options="-parameters" />
+      <module name="chat-web01" options="-parameters" />
+      <module name="chat-web02" options="-parameters" />
+    </option>
+  </component>
+</project>

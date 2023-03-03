@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>chat</artifactId>
+    <groupId>com.roy</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.roy</groupId>
+  <artifactId>chat-entrance</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>chat-entrance</name>
+
+
+  <dependencies>
+    <!--统一采用父项目的版本-->
+    <dependency>
+      <groupId>com.roy</groupId>
+      <artifactId>chat-web01</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.roy</groupId>
+      <artifactId>chat-web02</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+  </dependencies>
+
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <mainClass>com.roy.EntranceAPP</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
+</project>
