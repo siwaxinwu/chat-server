@@ -1,0 +1,7 @@
+/.idea/
+/chat-common/target/
+/chat-dao/target/
+/chat-entrance/target/
+/chat-service/target/
+/chat-web01/target/
+/chat-web02/target/
