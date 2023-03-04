@@ -5,3 +5,13 @@ server:
 spring:
   profiles:
     active: common,dao,service
+  datasource:
+    druid:
+      url: jdbc:mysql://1.117.109.40:3306/test?serverTimezone=UTC&useSSL=false&autoReconnect=true&tinyInt1isBit=false&useUnicode=true&characterEncoding=utf8
+      username: root
+      password: dyw862749167
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
